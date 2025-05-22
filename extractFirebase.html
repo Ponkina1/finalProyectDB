@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Extracción de Datos desde Firebase</title>
+</head>
+<body>
+
+    <h1>Consulta y Extracción de Datos</h1>
+
+    <!-- Consultar datos -->
+    <h2>Consultar Datos</h2>
+
+    <form action="/consultar-todos" method="GET">
+        <button type="submit">Ver todos los datos</button>
+    </form>
+
+    <br>
+
+    <form action="/consultar-filtrado" method="GET">
+        <label>Filtrar por nombre de jugador:</label>
+        <input type="text" name="username">
+        <button type="submit">Buscar</button>
+    </form>
+
+    <hr>
+
+    <!-- Proceso ETL -->
+    <h2>Proceso ETL (Exportar a MySQL)</h2>
+
+    <form action="/etl-firebase-a-mysql" method="POST">
+        <button type="submit">Exportar todos los datos a MySQL</button>
+    </form>
+
+</body>
+</html>

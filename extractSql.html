@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Consulta de Datos SQL</title>
+</head>
+<body>
+
+    <h1>Consulta de Base de Datos SQL</h1>
+
+        <button type="submit" id="loadBtn">Ver todos los datos</button>
+
+
+    <br>
+
+    <form action="/sql-consultar-filtrado" method="GET">
+        <label>Filtrar por nombre de usuario:</label>
+        <input type="text" name="username">
+        <button type="submit">Buscar</button>
+    </form>
+
+    <hr>
+
+    <form action="/sql-descargar" method="GET">
+        <button type="submit">Descargar todos los datos (CSV)</button>
+    </form>
+
+</body>
+</html>
